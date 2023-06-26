@@ -1,0 +1,30 @@
+body{
+    background-color: gray;
+
+}
+.FundoBranco{
+ height:100%;
+ width: 34.946236559139784vw;
+ background-color:white;
+ margin:0 auto;
+display:flex;
+flex-direction:column;
+text-align:center;
+}
+h2{
+font-family: 'Roboto', sans-serif;
+ text-align:center;
+ margin-top:3vh;
+}
+.BoxCadastro{
+    border: 1px solid #c7c8c9;
+    margin:1vh 0;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+
+}
+.info1{
+    padding-top:10px;
+
+}

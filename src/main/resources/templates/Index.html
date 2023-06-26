@@ -1,0 +1,36 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Reading List</title>
+    <link rel="stylesheet" type="text/css" media="all"
+          href="../../css/gtvg.css" th:href="@{/css/Index.css}" />
+    <link th:replace="fragments/Fragmentos.html :: cssBoostrap">
+</head>
+<body>
+<nav th:replace="fragments/Fragmentos.html :: nav"></nav>
+<section class="bodyGrey">
+    <div class="boxForm">
+        <form>
+            <div class="mb-3">
+                <label for="validationTooltip01" class="form-label">Nome</label>
+                <input type="text" class="form-control" name="nome" id="validationTooltip01" required>
+            </div>
+            <div class="mb-3">
+                <label for="validationTooltip02" class="form-label">Sobrenome</label>
+                <input type="text" class="form-control" name="sobrenome" id="validationTooltip02" required>
+            </div>
+            <div class="mb-3">
+                <label for="validationTooltip03" class="form-label">Idade</label>
+                <input type="text" class="form-control" name="idade" id="validationTooltip03" required>
+            </div>
+            <div class="mb-3">
+                <label for="validationTooltip04" class="form-label">Senha</label>
+                <input type="password" class="form-control" name="senha" id="validationTooltip04" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary" formmethod="post" >Cadastrar</button>
+        </form>
+    </div>
+</section>
+<script th:replace="fragments/Fragmentos.html :: jsBootstrap"></script>
+</body>
+</html>

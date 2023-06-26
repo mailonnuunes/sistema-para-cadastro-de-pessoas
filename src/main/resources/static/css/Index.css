@@ -1,0 +1,34 @@
+.bodyGrey{
+    background-color:gray;
+    width:100%;
+    height: 100%;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+.boxForm{
+    width:34.946236559139784vw;
+    height:62.24066390041494vh;
+    background-color:white;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:20px;
+    flex-wrap:wrap;
+    position: relative;
+}
+form{
+    width: 32.25806451612903vw;
+    height:51.86721991701245vh;
+    position:absolute;
+    border-radius: 20px;
+
+}
+@media only screen and (max-height: 660px){
+
+    form{
+    height:70vh;
+
+    }
+
+}

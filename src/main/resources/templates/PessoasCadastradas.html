@@ -1,0 +1,30 @@
+<!DOCTYPE >
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Pessoas Cadastradas</title>
+    <link th:replace="fragments/Fragmentos.html :: cssBoostrap">
+    <link rel="stylesheet" type="text/css" media="all"
+          href="../../css/gtvg.css" th:href="@{/css/PessoasCadastradas.css}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav th:replace="fragments/Fragmentos.html :: nav"></nav>
+    <div class="FundoBranco">
+        <h2> Pessoas Cadastradas no sistema</h2>
+        <hr>
+
+        <div class="BoxCadastro" th:each="usuario : ${usuarios}">
+            <p class="info1">Nome: <span th:text="${usuario.nome}"></span></p>
+            <p>Sobrenome: <span th:text="${usuario.sobrenome}"></span></p>
+            <p>Idade: <span th:text="${usuario.idade}"></span></p>
+            </div>
+    </div>
+
+
+    <script th:replace="fragments/Fragmentos.html:: jsBootstrap"></script>
+</body>
+</html>
