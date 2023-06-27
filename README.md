@@ -1,7 +1,7 @@
 # sistema-para-cadastro-de-pessoas
 
 ##Documentação do projeto.
-tecnologias utilizadas: java, spring boot, spring mvc, lombok,devtools, thymeleaf e mysql.
+Tecnologias utilizadas: Java, Spring Boot, Spring MVC,Spring JPA, Lombok, Devtools, Thymeleaf e Mysql.
 
 Na tela de inicio temos um formulário de cadastro onde é solicitada as seguintes informações para quem for cadastrar uma pessoa: nome, sobrenome e usuario(Campos em branco não são valídos e o cadastrante terá um aviso na tela).
 
